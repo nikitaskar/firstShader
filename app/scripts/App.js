@@ -14,7 +14,7 @@ export default class App {
         this.container = document.querySelector( '#main' );
     	document.body.appendChild( this.container );
 
-        this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 200 );
+        this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 100000 );
         this.camera.position.z = 200;
 
         this.controls = new OrbitControls(this.camera)
